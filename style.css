@@ -95,12 +95,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-.likeButton.clicked .syuia {
-  -webkit-animation: syuiAnime 100ms;
-  animation: syuiAnime 100ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
+
 
 .likeButton.clicked .syuib {
   -webkit-animation: syuiAnime 800ms;
@@ -1102,35 +1097,25 @@ body {
 }
 
 @keyframes syuiAnime {
-  0% {
-    -webkit-transform: scale(0,512);
-    transform: scale(0.1,-0.1);
-    fill: #EF454A;
-  }
-  39% {
-    -webkit-transform: scale(0);
+  40% {
     transform-origin:0 0 0;
-    transform: scale(0);
+    transform: scale(1,0.9) translate(-9%, 9%);
+    -webkit-transform: scale(1,0.9) translate(-9%, 9%);
+  }
+  50% {
+    transform-origin:0 0 0;
+    transform: scale(1,0.9) translate(-7%, 7%);
+    -webkit-transform: scale(1,0.9) translate(-7%, 7%);
   }
   60% {
-    -webkit-transform: scale(1.2, 1.2);
     transform-origin:0 0 0;
-    transform: scale(1.2, 1.2);
+    transform: scale(1) translate(-7%, 7%);
+    -webkit-transform: scale(1) translate(-7%, 7%);
   }
   70% {
     transform-origin:0 0 0;
-    -webkit-transform: scale(1, 1) translate(0%, -10%);
-    transform: scale(1, 1) translate(0%, -10%);
-  }
-  75% {
-    transform-origin:0 0 0;
-    -webkit-transform: scale(1.1, 0.9) translate(0%, 5%);
-    transform: scale(1.1, 0.9) translate(0%, 5%);
-  }
-  80% {
-    transform-origin:0 0 0;
-    -webkit-transform: scale(0.95, 1.05) translate(0%, -3%);
-    transform: scale(0.95, 1.05) translate(0%, -3%);
+    transform: scale(1.0.4) translate(-5%,5%);
+    -webkit-transform: scale(1.0.4) translate(-5%,5%);
   }
   100% {
     transform-origin:0 0 0;
@@ -1150,4 +1135,11 @@ body {
 
 .syuib {
     fill: #EF454A;
+}
+
+.likeButton.clicked .syuia {
+  -webkit-animation: syuiAnime 400ms;
+  animation: syuiAnime 400ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
