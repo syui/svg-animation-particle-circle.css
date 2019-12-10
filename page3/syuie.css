@@ -139,7 +139,7 @@
     transform: scale(0.01);
   }
   1% {
-    opacity: 1;
+    opacity: 0.3;
     -webkit-transform: scale(0.01);
     transform: scale(0.01);
   }
