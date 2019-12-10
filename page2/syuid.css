@@ -1,0 +1,64 @@
+@keyframes syuidAnime {
+  /* 朱色を透明にした配色から動作を開始 */
+  40% {
+    fiil:#ef454a63;
+    transform-origin:0 0 0;
+    transform: scale(1,0.9) translate(-9%, 9%);
+    -webkit-transform: scale(1,0.9) translate(-9%, 9%);
+  }
+  /* 朱色を透明に、かつ直前よりも濃くする */
+  50% {
+    fill:#ef454ab8;
+    transform-origin:0 0 0;
+    transform: scale(1,0.9) translate(-7%, 7%);
+    -webkit-transform: scale(1,0.9) translate(-7%, 7%);
+  }
+  60% {
+    transform-origin:0 0 0;
+    transform: scale(1) translate(-7%, 7%);
+    -webkit-transform: scale(1) translate(-7%, 7%);
+  }
+  /* ここで動きを正している、一旦、標準より大きくかつ小さくブレる */
+  70% {
+    transform-origin:0 0 0;
+    transform: scale(1.0.4) translate(-5%,5%);
+    -webkit-transform: scale(1.0.4) translate(-5%,5%);
+  }
+  80% {
+    fill: #ef454a91;
+    transform-origin:0 0 0;
+    transform: scale(1.0.4) translate(-5%,5%);
+    -webkit-transform: scale(1.0.4) translate(-5%,5%);
+  }
+  /* ここの配色は朱色から離れて、濃い黄色を選択。爆発の閃光のようなものを再現するため */
+  90% {
+    fill: #f4a316b3;
+    transform-origin:0 0 0;
+    transform: scale(1) translate(0%);
+    -webkit-transform: scale(1) translate(0%);
+  }
+  /* 最終の色はもとに戻す */
+  100% {
+    transform-origin:0 0 0;
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+    fill: #EF454A;
+  } 
+}
+
+.likeButton .syuid {
+  fill: #EF454A;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 250px 250px;
+  transform-origin: 250px 250px;
+}
+
+.likeButton.clicked .syuid {
+  fill: #EF454A;
+  -webkit-animation: syuidAnime 400ms;
+  animation: syuidAnime 400ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+

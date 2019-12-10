@@ -1,0 +1,52 @@
+@keyframes syuieAnime {
+  40% {
+    fiil:#ef454a63;
+    transform-origin:0 0 0;
+    transform: scale(1,0.9) translate(-9%);
+  }
+  50% {
+    fill:#ef454ab8;
+    transform-origin:0 0 0;
+    transform: scale(1,0.9) translate(-7%);
+  }
+  60% {
+    transform-origin:0 0 0;
+    transform: scale(1) translate(-7%, 7%);
+  }
+  70% {
+    transform-origin:0 0 0;
+    transform: scale(1) translate(-5%,5%);
+  }
+  80% {
+    fill: #ef454a91;
+    transform-origin:0 0 0;
+    transform: scale(1) translate(-5%,5%);
+  }
+  90% {
+    fill: #f4a316b3;
+    transform-origin:0 0 0;
+    transform: scale(1) translate(0%);
+  }
+  100% {
+    transform-origin:0 0 0;
+    transform: scale(1, 1) translate(0%, 0%);
+    fill: #EF454A;
+  } 
+}
+
+.likeButton .syuie {
+  fill: #EF454A;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 250px 250px;
+  transform-origin: 250px 250px;
+}
+
+.likeButton.clicked .syuie {
+  fill: #EF454A;
+  -webkit-animation: syuieAnime 400ms;
+  animation: syuieAnime 400ms;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
