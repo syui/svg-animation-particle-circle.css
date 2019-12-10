@@ -7,7 +7,7 @@ ref : https://codepen.io/yachin29/pen/oprNPJ
 ![](./img/demo.gif)
 
 ```sh
-$ git clone https://syui.cf/svg-animation-particle-circle.css
+$ git clone https://github.com/syui/svg-animation-particle-circle.css
 $ cd svg-animation-particle-circle.css
 $ open index.html
 ```
