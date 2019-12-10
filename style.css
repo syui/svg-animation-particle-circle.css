@@ -30,7 +30,6 @@ body {
 
 .likeButton {
   cursor: pointer;
-
 }
 
 .likeButton .border {
@@ -59,47 +58,9 @@ body {
   transform-origin: 250px 250px;
 }
 
-.likeButton .syui {
-  fill: #EF454A;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 250px 250px;
-  transform-origin: 250px 250px;
-}
-
-.likeButton .syuia {
-  fill: #ccc;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 250px 250px;
-  transform-origin: 250px 250px;
-}
-
-.likeButton .syuib {
-  fill: #999;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transform-origin: 250px 250px;
-  transform-origin: 250px 250px;
-}
-
 .likeButton.clicked .explosion {
   -webkit-animation: explosionAnime 800ms;
   animation: explosionAnime 800ms;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-.likeButton.clicked .syui {
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-
-
-
-.likeButton.clicked .syuib {
-  -webkit-animation: syuiAnime 800ms;
-  animation: syuiAnime 800ms;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -1125,21 +1086,18 @@ body {
   } 
 }
 
-.syui {
-    fill: #EF454A;
+.likeButton .syui {
+  fill: #EF454A;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 250px 250px;
+  transform-origin: 250px 250px;
 }
 
-.syuia {
-    fill: #EF454A;
-}
-
-.syuib {
-    fill: #EF454A;
-}
-
-.likeButton.clicked .syuia {
-  -webkit-animation: syuiAnime 400ms;
-  animation: syuiAnime 400ms;
+.likeButton.clicked .syui {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  -webkit-animation: syuiAnime 400ms;
+  animation: syuiAnime 400ms;
 }
+

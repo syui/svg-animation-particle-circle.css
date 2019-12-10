@@ -1,0 +1,47 @@
+@keyframes syuibAnime {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    fill: #ccc;
+  }
+  39% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+  }
+  70% {
+    -webkit-transform: scale(1, 1) translate(0%, -10%);
+    transform: scale(1, 1) translate(0%, -10%);
+  }
+  75% {
+    -webkit-transform: scale(1.1, 0.9) translate(0%, 5%);
+    transform: scale(1.1, 0.9) translate(0%, 5%);
+  }
+  80% {
+    -webkit-transform: scale(0.95, 1.05) translate(0%, -3%);
+    transform: scale(0.95, 1.05) translate(0%, -3%);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translate(0%, 0%);
+    transform: scale(1, 1) translate(0%, 0%);
+    fill: #ccc;
+  }
+}
+
+.likeButton .syuib {
+  fill: #999;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: 250px 250px;
+  transform-origin: 250px 250px;
+}
+
+.likeButton.clicked .syuib {
+  fill: #ccc;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
